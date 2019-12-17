@@ -1,13 +1,5 @@
-let a = document.querySelector('.p1');
-let b = document.querySelector('.b1');
-let nemberCalculator = function (c,y){
-return c*y
-}
+let item = document.querySelector('.touch');
 
-
-b.addEventListener('click',function(){
-a.style.color="blue"
-});
-b.addEventListener('click',function(){
-  a.style.color='red'
+item.addEventListener('click', function () {
+    this.classList.toggle('active');
 })
